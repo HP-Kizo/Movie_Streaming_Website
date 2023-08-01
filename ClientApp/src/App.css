@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+.app {
+  background-color: black;
+  color: white;
+  min-height: 400px;
+}
+.svg-inline--fa {
+  transform: translate(-20px, 0px);
+}
+.nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  color: antiquewhite;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.click_search {
+  transform: translate(0px, 40px);
+}
+.movie_app {
+  margin-top: 37px;
+  font-weight: bold;
+  color: brown;
+}
+.movie_app:hover {
+  transform: scale(1.1);
+}
+.bg_black {
+  background-color: black;
+}
+
+.bg_transparent {
+  background-color: transparent;
+}
+.img_poster {
+  height: 200px;
+}
+.img_backdrop {
+  height: 100px;
+}
+.div_listItem {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
+}
+.div_listItem_backdrop {
+  display: flex;
+  overflow: scroll;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  /* transform: translate(20px, 0px); */
+}
+.button_movie:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.click_search:hover {
+  cursor: pointer;
+}
+
+.header {
+  margin-top: 70px;
+}
+.div_listItem_backdrop::-webkit-scrollbar {
+  width: 0px; /* Chiều rộng vùng chứa scrollbar */
+  height: 8px;
+}
+.div_listItem_backdrop::-webkit-scrollbar-track {
+  background: #ccc; /* Màu nền ngoài của thanh scrollbar */
+}
+.div_listItem_backdrop::-webkit-scrollbar-thumb {
+  background-color: #1d180d; /* Màu của thanh cuộn (scroll thumb) */
+  border-radius: 5px; /* Bo góc scroll thumb */
+  border: 2px solid #ccc; /* Không hỗ trợ padding, margin, transition nên dùng viền cùng màu nên để padding scroll thumb */
+}
+.div_listItem_backdrop::-webkit-scrollbar-thumb:hover {
+  background-color: #a29e9a; /* Hiệu ứng di chuột đổi màu*/
+}
+.div_listItem_backdrop {
+  /*cho Firefox*/
+  scrollbar-width: thin; /* "auto" hoặc "thin" */
+  scrollbar-color: orange #ccc; /* scroll thumb and track */
+}
+.resultList {
+  margin-top: 200px;
+}
+
+/* CSS */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-input,
+.genre-select,
+.media-type-select,
+.language-select,
+.year-select,
+.search-button {
+  margin: 0 8px;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.genre-select,
+.media-type-select,
+.language-select,
+.year-select,
+.search-button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Tùy chỉnh kiểu dáng cho các thẻ select */
+.select-css {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath fill='%23212529' d='M5 6L0 1h10L5 6z'/%3E%3C/svg%3E");
+  background-position: right 8px center;
+}
+
+.not_found {
+  margin-top: 100px;
+}

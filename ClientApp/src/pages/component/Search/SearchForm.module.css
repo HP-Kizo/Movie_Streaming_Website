@@ -1,0 +1,86 @@
+.div {
+  margin: 0px auto;
+  position: relative;
+  top: 160px;
+  width: 60%;
+  background-color: #ff9800;
+}
+.input {
+  width: 73%;
+  border: 0px transparent;
+  height: 30px;
+}
+.span {
+  width: 100%;
+  background-color: aqua;
+  height: 2px;
+  margin-top: 20px;
+  display: block;
+}
+.data_input {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  padding-top: 14px;
+}
+.reset {
+  border: transparent;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.search {
+  border-radius: 5px;
+
+  border: transparent;
+  padding: 10px 20px;
+}
+.reset:hover {
+  background-color: red;
+}
+.search:hover {
+  background-color: aqua;
+}
+.button {
+  display: flex;
+  justify-content: right;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+/* Xóa đi các đường viền mặc định */
+select {
+  border: none;
+  outline: none;
+}
+
+/* CSS */
+.custom_select {
+  appearance: none;
+  outline: none;
+  border: none;
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.custom_select::after {
+  content: "\25BC"; /* Dấu mũi tên xuống */
+  font-size: 18px;
+  color: #212529;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.custom_select:hover {
+  background-color: #e2e6ea;
+}
+
+.custom_select:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
